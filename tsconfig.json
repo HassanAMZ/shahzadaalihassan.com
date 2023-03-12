@@ -19,10 +19,30 @@
         "name": "next"
       }
     ],
+    "baseUrl": ".",
     "paths": {
-      "@/*": ["./*"]
+      "@/*": ["./*"],
+      "@/components/*": ["components/*"],
+      "@/data/*": ["data/*"],
+      "@/layouts/*": ["layouts/*"],
+      "@/lib/*": ["lib/*"],
+      "@/firebase/*": ["firebase/*"],
+      "@/contexts/*": ["contexts/*"],
+      "@/css/*": ["css/*"]
     }
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts"],
+  "include": [
+    "next-env.d.ts",
+    "**/*.ts",
+    "**/*.tsx",
+    "**/*.js",
+    "**/*.jsx",
+    ".next/types/**/*.ts",
+    "app/layout.jsx",
+    "app/blog/page.jsx",
+    "components/BlogCategoryPreview.jsx",
+    "components/getBlogMetadata.js",
+    "app/blog/layout.jsx"
+  ],
   "exclude": ["node_modules"]
 }
