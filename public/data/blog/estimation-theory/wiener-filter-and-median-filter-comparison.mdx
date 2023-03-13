@@ -1,25 +1,24 @@
 ---
 title: Wiener Filter And Median Filter Comparison
-date: '2021-02-01'
-blogID: '00035'
-tags: ['Median Filter', 'Wiener Filter', 'Python', 'Estimation Theory', 'Image Processing']
+date: "2021-02-01"
+blogID: "00035"
+tags:
+  [
+    "Median Filter",
+    "Wiener Filter",
+    "Python",
+    "Estimation Theory",
+    "Image Processing",
+  ]
 draft: false
 summary: Assuming known stationary signal and noise spectra and additive noise, the Wiener filter is a filter used in signal processing to provide an estimate of a desired or target random process through linear time-invariant (LTI) filtering of an observed noisy process. The mean square error between the intended process and the estimated random process is reduced by the Wiener filter.
-coverImage: '/static/blog/00001.png'
-embedId: 'sfv4jHUssAg'
+coverImage: "/static/blog/00001.png"
+embedId: "sfv4jHUssAg"
 ---
-
-import YoutubeEmbed from '@/components/YoutubeEmbed'
-
-<TOCInline toc={props.toc} exclude="Overview" toHeading={3} />
 
 ### Github Repo (Code & Report)
 
 [Github wiener-median-comparison](https://github.com/HassanAMZ/wiener-median-comparison)
-
-### Youtube Video
-
-<YoutubeEmbed embedId="sfv4jHUssAg" />
 
 ### Overview:
 
@@ -38,7 +37,9 @@ Generate Noisy Image
 
 ![Figure 1. Noisy Image generation σ=10, 20, 30.](/static/blog/00035_0.png)
 
-<div className="text-center py-2">_Figure 1. Noisy Image generation σ=10, 20, 30._</div>
+<div className="text-center py-2">
+  _Figure 1. Noisy Image generation σ=10, 20, 30._
+</div>
 
 Confirm σ1, σ2, σ3
 
@@ -71,7 +72,9 @@ print('\u03c3_2 = ' + str(sigma_2))
 print('\u03c3_3 = ' + str(sigma_3))
 ```
 
-<div className="text-center py-2">_Figure 2. Confirm 𝜎1, 𝜎2, 𝜎3 by calculating rms values._</div>
+<div className="text-center py-2">
+  _Figure 2. Confirm 𝜎1, 𝜎2, 𝜎3 by calculating rms values._
+</div>
 
 ```python
 
@@ -152,14 +155,17 @@ filtered_img_2 = wiener_filter(noisy_img_2, kernel, K = 10)
 filtered_img_3 = wiener_filter(noisy_img_3, kernel, K = 10)
 ```
 
-<div className="text-center py-2">_Figure 5. Wiener Filter implementation using Python._</div>
+<div className="text-center py-2">
+  _Figure 5. Wiener Filter implementation using Python._
+</div>
 
 Figure 6 shows the results of using the Wiener Filter to restore noisy images. The first three images are blurred and have Gaussian noise added to them with sigma values of 10, 20, and 30, respectively. The remaining images are the outcomes of applying the Wiener Filter in accordance with the first three degraded images. Figure 7 shows an implementation to calculate the Wiener Filter's rms error.
 
 ![Results of applying Wiener Filter to restore noisy images, σ=10,20,30](/static/blog/00035_3.png)
 
 <div className="text-center py-2">
-  _Figure 6. Results of applying Wiener Filter to restore noisy images, σ=10,20,30_
+  _Figure 6. Results of applying Wiener Filter to restore noisy images,
+  σ=10,20,30_
 </div>
 
 Calculate rms error
@@ -197,7 +203,9 @@ print('rms_2 = ' + str(rms_2))
 print('rms_3 = ' + str(rms_3))
 ```
 
-<div className="text-center py-2">_Figure 7. Calculate rms error of Wiener Filter._</div>
+<div className="text-center py-2">
+  _Figure 7. Calculate rms error of Wiener Filter._
+</div>
 
 ```
 Rms_1= 90.003692
@@ -251,13 +259,17 @@ filtered_img_2 - median_filter(noisy_img_2, 3)
 filtered_img_3 = median_filter(noisy_img_3, 3)
 ```
 
-<div className="text-center py-2">_Figure 8. Median Filter implementation using Python._</div>
+<div className="text-center py-2">
+  _Figure 8. Median Filter implementation using Python._
+</div>
 
 Figure 8 shows a Median Filter implementation using Python; while figure 9 shows some results of denoising using Median Filter, left-to-right and top-to-bottom, the first three images are added Gaussian noise and the rest images are the results of applying Median Filter respectively to the first three images. An implementation of calculating rms error of Median Filter is described in figure 10.
 
 ![RMS for Maiden Filter](/static/blog/00035_4.png)
 
-<div className="text-center py-2">_Figure 9. Results of denoising using Median Filter, σ=30_</div>
+<div className="text-center py-2">
+  _Figure 9. Results of denoising using Median Filter, σ=30_
+</div>
 
 Calculate rms error
 

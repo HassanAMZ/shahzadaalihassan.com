@@ -1,26 +1,15 @@
 ---
 title: CSC Scholarship Interview NPU Xi'an China for MS. Electrical Engineering 2021
-date: '2021-10-26'
-blogID: '00003'
-tags: ['Study Abroad', 'Chinese Scholarship Council', 'NPU']
+date: "2021-10-26"
+blogID: "00003"
+tags: ["Study Abroad", "Chinese Scholarship Council", "NPU"]
 draft: false
 summary: Interview Questions and Answers for Northwestern Polytechnical University Xi'an China for Chinese scholarship council 2021-2023, Masters Ecletcial engineering in control sciences and engineering .
-coverImage: '/static/blog/00003.png'
-embedId: 'DZCui2Ob9Pk'
+coverImage: "/static/blog/00003.png"
+embedId: "DZCui2Ob9Pk"
 ---
 
-import YoutubeEmbed from '@/components/YoutubeEmbed'
-
 This interview was conducted on 14th April 2021. The purpose of this interview was to determine which scholarship will be awarded to the students, either it will be the CSC Chinese Scholarship Council, the presidential scholarship, or Road & Belt Scholarship.
-
-<YoutubeEmbed embedId="DZCui2Ob9Pk" />
-
-Table Of Content:
-
-0. [Duration of the Interview](#duration-of-thei-nterview)
-1. [The Interview Pannel](#the-interview-pannel)
-2. [Types of Questions](#types-of-questions)
-3. [Non-Acedamic Questions](#non-acedamic-questions)
 
 ## Duration of the Interview
 

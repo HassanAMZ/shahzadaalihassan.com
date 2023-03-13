@@ -1,29 +1,15 @@
 ---
 title: Predictor Corrector Method for Lorenz Equation
-date: '2021-03-02'
-blogID: '00011'
-tags: ['Numerical Analysis', 'Predictor Corrector Method', 'Python']
+date: "2021-03-02"
+blogID: "00011"
+tags: ["Numerical Analysis", "Predictor Corrector Method", "Python"]
 draft: false
 summary: In numerical analysis, predictor–corrector methods belong to a class of algorithms designed to integrate ordinary differential equations – to find an unknown function that satisfies a given differential equation.
-coverImage: '/static/blog/00011.png'
-embedId: 'xP7YBWlOKHA'
+coverImage: "/static/blog/00011.png"
+embedId: "xP7YBWlOKHA"
 ---
 
-import YoutubeEmbed from '@/components/YoutubeEmbed'
-
 In numerical analysis, predictor–corrector methods belong to a class of algorithms designed to integrate ordinary differential equations – to find an unknown function that satisfies a given differential equation. You can read about it more here on [wikipedia](https://en.wikipedia.org/wiki/Predictor%E2%80%93corrector_method)
-
-## Youtube Video
-
-<YoutubeEmbed embedId="xP7YBWlOKHA" />
-
-Table Of Content:
-
-0. [Question Statement](#question-statement)
-1. [Link to Github Repo](#link-to-github-repo)
-2. [Download Python File](#download-python-file)
-3. [Python Code](#python-code)
-4. [Graph Plots](#graph-plots)
 
 ## Question Statement
 

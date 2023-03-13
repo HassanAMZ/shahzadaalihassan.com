@@ -1,21 +1,15 @@
 ---
 title: Eular Method for Lorenz Equation
-date: '2021-03-01'
-blogID: '00010'
-tags: ['Numerical Analysis', 'Eular Method ', 'Python']
+date: "2021-03-01"
+blogID: "00010"
+tags: ["Numerical Analysis", "Eular Method ", "Python"]
 draft: false
 summary: In Numerical Analysis, the Euler method (also called forward Euler method) is a first-order numerical procedure for solving ordinary differential equations (ODEs) with a given initial value. Below is the python code for the Forward Eular method.
-coverImage: '/static/blog/00010.png'
-embedId: 'kDfBqaEBjpg'
+coverImage: "/static/blog/00010.png"
+embedId: "kDfBqaEBjpg"
 ---
 
-import YoutubeEmbed from '@/components/YoutubeEmbed'
-
 In Numerical Analysis, the Euler method (also called forward Euler method) is a first-order numerical procedure for solving ordinary differential equations (ODEs) with a given initial value. Below is the python code for the Forward Eular method. You can read about it more here on [wikipedia](https://en.wikipedia.org/wiki/Euler_method)
-
-## Youtube Video
-
-<YoutubeEmbed embedId="kDfBqaEBjpg" />
 
 Table Of Content:
 

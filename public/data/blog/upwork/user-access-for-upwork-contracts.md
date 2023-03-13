@@ -1,17 +1,15 @@
 ---
 title: User Access for Upwork Contracts
-date: '2022-01-04'
-blogID: '00031'
-tags: ['Upwork', 'Contract Details', 'User Access', Contracts]
+date: "2022-01-04"
+blogID: "00031"
+tags: ["Upwork", "Contract Details", "User Access", Contracts]
 draft: false
 summary: To work with clients, usually i require some access to platforms that are necessary for the Web analytics and development work. Usually the employee/ developer access works with proper assets.
-coverImage: '/static/blog/00031.png'
-embedId: 'null'
+coverImage: "/static/blog/00031.png"
+embedId: "null"
 ---
 
 To work with clients, usually i require some access to platforms that are necessary for the Web analytics and development work. Usually the employee/ developer access works with proper assets.
-
-<TOCInline toc={props.toc} exclude="Overview" toHeading={3} />
 
 You can check the official links for each platform! Kindly use the details mentioned below for access:
 
