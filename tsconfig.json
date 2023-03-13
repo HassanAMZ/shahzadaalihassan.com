@@ -41,7 +41,7 @@
     "app/layout.jsx",
     "app/blog/page.jsx",
     "components/BlogCategoryPreview.jsx",
-    "components/getBlogMetadata.js",
+    "components/getBlogMetadataFromCategory.js",
     "app/blog/layout.jsx"
   ],
   "exclude": ["node_modules"]

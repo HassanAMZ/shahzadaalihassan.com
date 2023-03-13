@@ -1,25 +1,44 @@
-import { Inter } from "next/font/google";
-import fs from "fs";
 import Link from "next/link";
+import getBlogMetadataFromCategory from "@/components/getBlogMetadataFromCategory";
+import getAllCategories from "@/components/getAllCategories";
+import getAllBlogs from "@/components/getAllBlogs";
+import fs from "fs"
+import Markdown from "markdown-to-jsx";
+import matter from 'gray-matter'
 
-const inter = Inter({ subsets: ["latin"] });
+export const generateStaticParams = async () => {
+  const blogList = getAllBlogs();
+  return blogList.map((blog) => ({
+    blog: blog.slug,
+  }));
+};
 
+const getPostContent = (category, slug) => {
+  const folder = "public/data/blog/";
+  let file = `${folder}${category}/${slug}.md`;
+  if (!fs.existsSync(file)) {
+    file = `${folder}${category}/${slug}.mdx`;
+  }
+  const content = fs.readFileSync(file, "utf8");
+  const matterResult = matter(content);
+  return matterResult;
+};
 
-export default function Category({ params }) {
-  const directoryPath = `public/data/blog/${params.category}/`
-  const files = fs.readdirSync(directoryPath);
-  const fileNames = [];
-  files.forEach((file, index) => {
-    fileNames.push(
-      <Link href={`/blog/${params.category}/${file}`} key={index}>
-        {file.charAt(0).toUpperCase() + file.slice(1).replace(/-/g, " ").substring(0, file.indexOf(".") - 1)}
-      </Link>
-    );
-  });
+export default function BlogPage({ params }) {
+
+  const slug = params.blog;
+  const category = params.category;
+  const post = getPostContent(category, slug);
   return (
-    <main>
-      Blog Pages
-      <ul className="flex flex-col">{fileNames}</ul>
-    </main>
+    <div>
+      <div className="my-12 text-center">
+        <h1 className="text-2xl text-slate-600 ">{post.data.title}</h1>
+        <p className="text-slate-400 mt-2">{post.data.date}</p>
+      </div>
+
+      <article className="prose">
+        <Markdown>{post.content}</Markdown>
+      </article>
+    </div>
   );
-}
+};

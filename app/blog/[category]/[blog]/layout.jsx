@@ -1,8 +1,8 @@
 export const metadata = {
-  title: "Category Page",
-  description: "Category Page",
+  title: "Blog Page",
+  description: "Blog Page",
 };
 
 export default function CategoryLayout({ children }) {
-  return <>{children}</>;
+  return <div>{children}</div>;
 }
