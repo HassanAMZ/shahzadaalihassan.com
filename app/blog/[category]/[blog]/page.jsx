@@ -8,6 +8,7 @@ import matter from 'gray-matter'
 
 export const generateStaticParams = async () => {
   const blogList = getAllBlogs();
+
   return blogList.map((blog) => ({
     blog: blog.slug,
   }));
