@@ -7,9 +7,11 @@ const getAllBlogs = () => {
   const allBlogMetaData = categories.flatMap((category) => {
     const blogsFromCategory = getBlogMetadataFromCategory(category);
     return blogsFromCategory.map(({ category, slug, title, date }) => ({
-      slug: `${category}/${slug}`,
+      slug: `${category}/${slug.toLowerCase()}`,
       title: `${title}`,
       date: `${date}`,
+      category: `${category}`,
+      filename: `${slug}`,
     }));
   });
 
