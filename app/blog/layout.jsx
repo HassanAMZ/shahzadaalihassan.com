@@ -1,4 +1,4 @@
-import Link from 'next/link'
+import Link from "next/link";
 import getAllCategories from "@/components/getAllCategories";
 
 export const metadata = {
@@ -8,22 +8,24 @@ export const metadata = {
 
 export default function BlogLayout({ children }) {
   const allCategories = getAllCategories();
-  const fileName = []
+  const fileName = [];
   allCategories.forEach((file, index) => {
     fileName.push(
-      <Link href={`/blog/${file}`} key={index}>
+      <Link key={index}
+        href={`/blog/${file}`}
+        className="flex w-full justify-between cursor-pointer items-center rounded-lg px-4 py-2 transition duration-300 ease-in-out hover:bg-zinc-800 py-2 hover:text-white font-bold"
+      >
         {file.charAt(0).toUpperCase() + file.slice(1).replace(/-/g, " ")}
       </Link>
     );
   });
   return (
-    <div className="grid grid-cols-3 p-4">
-      <div className="flex col-span-1 flex-col bg-gray-50 text-gray-900 p-4">
-        All Categories
+    <div className="flex max-h-screen">
+      <div className="flex flex-col min-w-fit p-2 bg-gray-50 text-gray-900">
         {fileName}
       </div>
 
-      <div className="p-4 col-span-2">{children}</div>
+      <div className="">{children}</div>
     </div>
   );
 }
