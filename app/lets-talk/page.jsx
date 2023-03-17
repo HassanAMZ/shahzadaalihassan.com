@@ -33,14 +33,13 @@ export default function LetsTalk() {
         },
     });
     return (
-        <>
-            <InlineWidget
-                url="https://calendly.com/shahzadaalihassan"
-                styles={{
-                    height: "100vh",
-                    "min-width": "90vw",
-                }}
-            />
-        </>
+
+        <InlineWidget
+            url="https://calendly.com/shahzadaalihassan/discovery-call-migrate-to-ga4"
+            styles={{
+                height: "100vh",
+                "min-width": "90vw",
+            }}
+        />
     );
 }

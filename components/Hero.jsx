@@ -90,7 +90,7 @@ const Hero = () => {
         strategy="beforeInteractive"
         src="https://player.vimeo.com/api/player.js"
       />
-      <div className="sm:w-[75%] sm:pt-[45%] pt-[56.25%] w-full h-0 relative">
+      <div className="md:w-[75%] md:pt-[45%] pt-[56.25%] w-full h-0 relative">
         <iframe
           src="https://player.vimeo.com/video/807730528?h=98a5bf96e1&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
           allow="autoplay; fullscreen; picture-in-picture"
