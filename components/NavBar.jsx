@@ -19,7 +19,7 @@ export function NavLinks({ href, children }) {
 
 export default function NavBar() {
     return (
-        <nav className="sticky top-0 flex flex-row justify-between align-center p-4 bg-gray-900 z-[90]">
+        <nav className="sticky top-0 flex flex-row justify-between items-center p-4 bg-gray-900 z-[90]">
             <NavLinks href="/">Shahzadaalihassan</NavLinks>
             {/* <NavLinks href="/blog">Blog Page</NavLinks> */}
             <CallToAction callToActionText={"Migrate Now"} />

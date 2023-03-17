@@ -4,11 +4,7 @@ const previousClientsData = [
     clientSiteLink: "https://aumi4.com",
     clientSlug: "aumi4",
   },
-  {
-    clientName: "CreekKnives",
-    clientSiteLink: "http://bearcreekknives.com/",
-    clientSlug: "bearcreekknives",
-  },
+
   {
     clientName: "Figment",
     clientSiteLink: "https://figment.com/",
@@ -34,6 +30,7 @@ const previousClientsData = [
     clientSiteLink: "https://stepbystep.com/",
     clientSlug: "stepbystep",
   },
+
   {
     clientName: "Harmon",
     clientSiteLink: "https://harmon.ie/",
@@ -44,6 +41,11 @@ const previousClientsData = [
     clientName: "Bookonline",
     clientSiteLink: "https://bookonline.com/",
     clientSlug: "bookonline",
+  },
+  {
+    clientName: "CreekKnives",
+    clientSiteLink: "http://bearcreekknives.com/",
+    clientSlug: "bearcreekknives",
   },
 ];
 

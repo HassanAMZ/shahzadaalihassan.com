@@ -13,16 +13,15 @@ module.exports = {
       },
 
       fontSize: {
-        sm: "0.875rem",
-        base: ["0.875rem", "1rem", "1.125rem"],
-        lg: ["1rem", "1.125rem", "1.25rem"],
-        xl: ["1.125rem", "1.25rem", "1.5rem"],
-        "2xl": ["1.25rem", "1.5rem", "1.875rem"],
-        "3xl": ["1.5rem", "1.875rem", "2.25rem"],
-        "4xl": ["1.875rem", "2.25rem", "3rem"],
-        "5xl": ["2.25rem", "3rem", "4rem"],
-        "6xl": ["3rem ", "4rem", "5.5rem"],
-        "7xl": ["4rem ", "5.5rem", "7rem"],
+        sm: "0.8rem",
+        base: "1rem",
+        xl: "1.25rem",
+        "2xl": "1.5rem",
+        "3xl": "2.0rem",
+        "4xl": "2.4rem",
+        "5xl": "3.0rem",
+        "6xl": "3.6rem",
+        "7xl": "4.2rem",
       },
       keyframes: {
         fadeIn: {

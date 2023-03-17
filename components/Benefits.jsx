@@ -22,7 +22,7 @@ const benefits = [
 
 export default function Benefits() {
     return (
-        <div className="py-16 px-4 sm:px-6 lg:px-8">
+        <div className="py-16 px-4">
             <h2 className="text-3xl font-extrabold text-white text-center">
                 This is why you need it
             </h2>

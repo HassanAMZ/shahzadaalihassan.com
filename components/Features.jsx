@@ -18,29 +18,24 @@ const Features = () => {
             icon: "fas fa-cog",
             title: "Post-Migration Optimization",
             description:
-                "In addition to handling the migration process, you offer post-migration optimization services to help clients get the most out of their GA4 implementation. This can include setting up custom reports and dashboards, conducting data analysis, and providing recommendations for how to improve the client's tracking and reporting capabilities.",
+                "In addition to handling the migration process, you offer post-migration optimization services to help you get the most out of their GA4 implementation. This can include setting up custom reports and dashboards, conducting data analysis, and providing recommendations for how to improve the client's tracking and reporting capabilities.",
         },
     ];
 
     return (
-        <section className="py-4">
-            <h2 className="text-4xl font-bold text-center mb-8">
+        <section className="py-16">
+            <h2 className="text-4xl font-bold text-center mb-4">
                 This is why you pick us!
             </h2>
             <div className="flex flex-wrap pt-2">
                 {features.map((feature) => (
                     <div
                         key={feature.title}
-                        className="w-full md:w-1/3 px-4 mb-8 md:mb-0 text-center"
+                        className="w-full md:w-1/3 px-4 py-2 md:mb-0 text-center"
                     >
-                        <div className="bg-gray-800 rounded-lg py-8">
-                            <div className="text-3xl mb-4">
-                                <i className={feature.icon}></i>
-                            </div>
-                            <h3 className="text-xl font-bold mb-2">{feature.title}</h3>
-                            <p className="text-gray-400 text-base">
-                                {feature.description}
-                            </p>
+                        <div className="bg-gray-800 rounded-lg py-4 px-2">
+                            <h3 className="text-xl font-bold ">{feature.title}</h3>
+
                         </div>
                     </div>
                 ))}

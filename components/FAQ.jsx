@@ -35,17 +35,11 @@ const FAQ = () => {
     ];
 
     return (
-
-
-        <div className="w-full py-8">
-
+        <div className="w-full py-8 px-4">
             <div className="flex flex-col items-center">
-                <h2 className="font-bold text-5xl mt-5 tracking-tight">
-                    FAQ
+                <h2 className="font-bold text-5xl text-center mt-5 tracking-tight">
+                    Some questions that you might have?
                 </h2>
-                <p className="text-xl mt-3">
-                    Some questions that you might have!
-                </p>
             </div>
             {items.map((item, index) => (
                 <div key={index} className="border-b border-gray-200">
@@ -53,7 +47,7 @@ const FAQ = () => {
                         className="flex text-left justify-between w-full p-4 focus:outline-none"
                         onClick={() => handleClick(index)}
                     >
-                        <span className="text-lg font-medium">{item.faqQuestion}</span>
+                        <span className="text-lg">{item.faqQuestion}</span>
                         <svg
                             className={`w-5 h-5 transition-transform ${activeIndex === index ? "transform rotate-180" : ""
                                 }`}
@@ -71,7 +65,7 @@ const FAQ = () => {
                         className={`p-4 transition-height ${activeIndex === index ? "h-auto" : "h-0 hidden"
                             }`}
                     >
-                        <p className="">{item.faqAnswer}</p>
+                        <p className="text-md text-gray-200">{item.faqAnswer}</p>
                     </div>
                 </div>
             ))}
