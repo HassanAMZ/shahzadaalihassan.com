@@ -5,11 +5,11 @@
 @layer {
   @screen sm {
     html {
-      font-size: 10px;
+      font-size: 12px;
     }
   }
   html {
-    font-size: 10px;
+    font-size: 13px;
   }
   @screen md {
     html {

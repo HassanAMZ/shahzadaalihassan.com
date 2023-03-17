@@ -25,11 +25,6 @@ const previousClientsData = [
     clientSiteLink: "https://cmrd.com/",
     clientSlug: "cmrd",
   },
-  {
-    clientName: "Stepbystep",
-    clientSiteLink: "https://stepbystep.com/",
-    clientSlug: "stepbystep",
-  },
 
   {
     clientName: "Harmon",
@@ -41,11 +36,6 @@ const previousClientsData = [
     clientName: "Bookonline",
     clientSiteLink: "https://bookonline.com/",
     clientSlug: "bookonline",
-  },
-  {
-    clientName: "CreekKnives",
-    clientSiteLink: "http://bearcreekknives.com/",
-    clientSlug: "bearcreekknives",
   },
 ];
 

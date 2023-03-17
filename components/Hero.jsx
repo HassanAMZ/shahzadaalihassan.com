@@ -34,7 +34,7 @@ export function CallToAction({ callToActionText, imageLinks }) {
             <div className="-space-x-3 flex">
               {imgLinks && <HeroImage imageLinks={imgLinks} />}
             </div>
-            {ctaText && <span className="text-gray-100">{ctaText} &rarr;</span>}
+            {ctaText && <span className="text-gray-100 font-bold">{ctaText} &rarr;</span>}
           </span>
         </Link>
       </div>
@@ -43,19 +43,7 @@ export function CallToAction({ callToActionText, imageLinks }) {
   );
 }
 
-const Clients = () => {
-  return previousClientsData.map((client, index) => {
-    return (
-      <h3
-        className={`${index === 5 ? "col-start-2" : ""
-          } col-span-2 border-solid border-2 border-gray-800 shadow-sm shadow-pink-500 py-2 text-sm px-2 text-gray-200`}
-        key={index}
-      >
-        {client.clientName}
-      </h3>
-    );
-  });
-};
+
 
 const Hero = () => {
   const preHeadingText = "Get Your Store Migrated to";
@@ -73,10 +61,10 @@ const Hero = () => {
   return (
     <section
       id="hero"
-      className="flex flex-col  items-center justify-center text-center p-4 gap-3 pt-8"
+      className="flex flex-col  items-center justify-center text-center sm:p-4 gap-4 sm:pt-8"
       aria-label="hero section"
     >
-      <h2 className="text-6xl tracking-tight leading-tight font-bold pt-4 pb-2 ">
+      <h2 className="sm:text-6xl text-4xl tracking-tight leading-tight font-bold pt-4 pb-2 ">
         {preHeadingText}{" "}
         <span className="animate-text bg-gradient-to-r from-teal-500 via-purple-500 to-orange-500 bg-clip-text text-transparent font-black ">
           {headingText}
@@ -106,12 +94,7 @@ const Hero = () => {
         ></iframe>
       </div>
 
-      <div className="sm:max-w-2xl lg:max-w-full P-4">
-        <p className="pb-6 "> Clients we have worked with</p>
-        <div className="gap-3 grid grid-cols-10 text-center justify-center place-content-center">
-          <Clients />
-        </div>
-      </div>
+
     </section>
   );
 };

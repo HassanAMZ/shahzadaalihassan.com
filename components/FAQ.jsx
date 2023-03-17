@@ -32,6 +32,10 @@ const FAQ = () => {
             faqQuestion: "Can you configure the google tag manager server container?",
             faqAnswer: `Yes, I can configure the GTM Server container with either google cloud console or stape.io servers.`,
         },
+        {
+            faqQuestion: "Can you configure Facebook Pixel and Conversino API?",
+            faqAnswer: `Yes, I can configure the FB Pixel and Conversion API using GTM Server container with either google cloud console or stape.io servers.`,
+        },
     ];
 
     return (
@@ -44,7 +48,7 @@ const FAQ = () => {
             {items.map((item, index) => (
                 <div key={index} className="border-b border-gray-200">
                     <button
-                        className="flex text-left justify-between w-full p-4 focus:outline-none"
+                        className="flex text-left justify-between w-full py-4 focus:outline-none"
                         onClick={() => handleClick(index)}
                     >
                         <span className="text-lg">{item.faqQuestion}</span>
@@ -62,7 +66,7 @@ const FAQ = () => {
                         </svg>
                     </button>
                     <div
-                        className={`p-4 transition-height ${activeIndex === index ? "h-auto" : "h-0 hidden"
+                        className={`pb-2 transition-height ${activeIndex === index ? "h-auto" : "h-0 hidden"
                             }`}
                     >
                         <p className="text-md text-gray-200">{item.faqAnswer}</p>

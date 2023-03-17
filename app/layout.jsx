@@ -17,7 +17,7 @@ const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
   title: "Shazadaalihassan",
-  description: "Top rated web analytics on Upwork",
+  description: "Top rated web analytics",
 };
 
 export default function RootLayout({ children }) {
@@ -27,7 +27,7 @@ export default function RootLayout({ children }) {
         className={`bg-gray-900 text-gray-50 container mx-auto ${inter.className}`}
       >
         <GtmTrackingScript gtm_tracking_id={GTM_Tracking_ID} />
-        <main>{children}</main>
+        <>{children}</>
       </body>
     </html>
   );

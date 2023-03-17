@@ -6,17 +6,19 @@ import Features from "@/components/Features";
 import Footer from "@/components/Footer";
 import NavBar from "@/components/NavBar";
 import Testimonial from "@/components/Testimonials";
-import Link from "next/link";
 
-export default function Home() {
+export default function GoogleAnalytics4() {
   return (
     <>
-      <main className="grid place-content-center h-screen">
-        <Link href="/google-analytics-4">
-          <h2 className="text-6xl tracking-tight leading-tight font-bold pt-4 pb-2 underline text-blue-400">
-            Google Analytics 4 Migration Services
-          </h2>
-        </Link>
+      <main>
+        <NavBar />
+        <Hero />
+        <Features />
+        <Testimonial />
+        <Benefits />
+        <WordFlow />
+        <FAQ />
+        <Footer />
       </main>
     </>
   );

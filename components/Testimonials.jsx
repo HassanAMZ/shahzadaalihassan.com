@@ -1,7 +1,19 @@
 "use client";
-
+import previousClientsData from "@/public/data/previousClientsData";
 import React from "react";
-
+const Clients = () => {
+    return previousClientsData.map((client, index) => {
+        return (
+            <h3
+                className={`${index === 4 ? "col-start-2" : ""
+                    } col-span-2 border-solid border-2 border-gray-800 shadow-sm shadow-pink-500 py-2 text-sm px-2 text-gray-200`}
+                key={index}
+            >
+                {client.clientName}
+            </h3>
+        );
+    });
+};
 const Testimonial = ({ testimonial }) => {
     return testimonial.map((testimony, index) => {
         const { date, testimonial, name, username } = testimony;
@@ -84,7 +96,7 @@ const Testimonials = () => {
     ];
 
     return (
-        <section className="relative py-16 overflow-hidden">
+        <section className="relative py-10 overflow-hidden ">
             <img
                 className="absolute top-0 left-0"
                 src="flaro-assets/images/testimonials/gradient.svg"
@@ -95,10 +107,14 @@ const Testimonials = () => {
                 src="flaro-assets/images/testimonials/gradient2.svg"
                 alt=""
             />
+
             <div className="relative z-10 container px-4 mx-auto">
-                <h2 className="mb-16 text-6xl font-bold font-heading text-center tracking-px-n leading-tight">
-                    Don&apos;t just take our word for it
+                <h2 className=" text-6xl font-bold font-heading text-center tracking-px-n leading-tight">
+                    Don&apos;t just take my word for it
                 </h2>
+                <div className="gap-3 grid grid-cols-8 text-center p-8 justify-center place-content-center">
+                    <Clients />
+                </div>
                 <div className="flex flex-wrap -m-3">
                     <Testimonial testimonial={testimonials} />
                 </div>

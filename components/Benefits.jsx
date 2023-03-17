@@ -1,6 +1,7 @@
 "use client";
 
 import { Fragment } from "react";
+import Features from "./Features";
 
 const benefits = [
     {
@@ -23,12 +24,9 @@ const benefits = [
 export default function Benefits() {
     return (
         <div className="py-16 px-4">
-            <h2 className="text-3xl font-extrabold text-white text-center">
-                This is why you need it
+            <h2 className=" text-6xl font-bold font-heading text-center tracking-px-n leading-tight">
+                Do not waste more TIME!
             </h2>
-            <p className="mt-4 max-w-2xl text-xl text-gray-400 mx-auto text-center">
-                UA is dying and its a re-birth of the pheonix - GA4
-            </p>
             <div className="mt-10">
                 <dl className="space-y-10 md:space-y-0 md:grid md:grid-cols-3 md:gap-x-8 md:gap-y-10">
                     {benefits.map((benefit) => (

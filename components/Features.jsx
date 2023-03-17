@@ -23,24 +23,20 @@ const Features = () => {
     ];
 
     return (
-        <section className="py-16">
-            <h2 className="text-4xl font-bold text-center mb-4">
-                This is why you pick us!
-            </h2>
-            <div className="flex flex-wrap pt-2">
-                {features.map((feature) => (
-                    <div
-                        key={feature.title}
-                        className="w-full md:w-1/3 px-4 py-2 md:mb-0 text-center"
-                    >
-                        <div className="bg-gray-800 rounded-lg py-4 px-2">
-                            <h3 className="text-xl font-bold ">{feature.title}</h3>
 
-                        </div>
+        <div className="flex flex-wrap pt-4">
+            {features.map((feature) => (
+                <div
+                    key={feature.title}
+                    className="w-full md:w-1/3 px-4 py-2 md:mb-0 text-center"
+                >
+                    <div className="bg-gray-800 rounded-lg py-4 px-2">
+                        <h3 className="text-xl font-bold ">{feature.title}</h3>
+
                     </div>
-                ))}
-            </div>
-        </section>
+                </div>
+            ))}
+        </div>
     );
 };
 
