@@ -62,14 +62,14 @@ const WordFlow = () => {
     return (
         <section className="py-4 flex flex-col text-center lg:text-left items-start lg:flex-row lg:my-8">
             <div className="flex flex-col w-full sticky lg:top-36 lg:w-1/3 mt-2 lg:mt-12 px-8">
-                <h2 className="font-bold text-5xl text-center mt-5 tracking-tight">
+                <h2 className="font-bold text-4xl text-center md:text-left mt-5 tracking-tight">
                     Project Timeline
                 </h2>
                 <p>Working with me is jsut a 5 step process</p>
             </div>
             <div className="lg:ml-0 mx-auto lg:ml-12 lg:w-2/3 sticky">
                 <div className="container mx-auto w-full h-full">
-                    <div className="relative wrap overflow-hidden p-10 h-full">
+                    <div className="relative wrap overflow-hidden md:p-10 px-4 py-10 h-full">
                         <div
                             className="border-2-2 border-pink-555 absolute h-full border"
                             style={{ right: "50%", border: "2px solid purple" }}

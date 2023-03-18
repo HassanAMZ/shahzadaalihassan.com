@@ -41,7 +41,7 @@ const FAQ = () => {
     return (
         <div className="w-full py-8 px-4">
             <div className="flex flex-col items-center">
-                <h2 className="font-bold text-5xl text-center mt-5 tracking-tight">
+                <h2 className="font-bold text-4xl text-center mt-5 tracking-tight">
                     Some questions that you might have?
                 </h2>
             </div>

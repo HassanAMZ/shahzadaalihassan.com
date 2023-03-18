@@ -24,7 +24,7 @@ const benefits = [
 export default function Benefits() {
     return (
         <div className="py-16 px-4">
-            <h2 className=" text-6xl font-bold font-heading text-center tracking-px-n leading-tight">
+            <h2 className=" text-4xl font-bold font-heading text-center tracking-px-n leading-tight">
                 Do not waste more TIME!
             </h2>
             <div className="mt-10">
