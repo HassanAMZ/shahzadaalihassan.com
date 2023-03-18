@@ -2,7 +2,7 @@
 import { useCalendlyEventListener, InlineWidget } from "react-calendly";
 
 export default function LetsTalk() {
-    const gtm_event = ({ event_name }) => {
+    const gtm_event = (event_name) => {
         window.dataLayer = window.dataLayer || [];
         dataLayer.push({
             event: "gtm_custom_event",
