@@ -2,22 +2,38 @@
 import { useCalendlyEventListener, InlineWidget } from "react-calendly";
 
 export default function LetsTalk() {
+    const gtm_event = ({ event_name }) => {
+        window.dataLayer = window.dataLayer || [];
+        dataLayer.push({
+            event: "gtm_custom_event",
+            datalayer_event_name: event_name,
+            calendly_details: {
+                form_id: "discovery-call-migrate-to-ga4",
+                form_url:
+                    "https://calendly.com/shahzadaalihassan/discovery-call-migrate-to-ga4",
+                form_name: "Discovery Call Migrate To GA4 ",
+            },
+        });
+    };
+
     useCalendlyEventListener({
-        onProfilePageViewed: () => {
-            window.dataLayer = window.dataLayer || [];
-            dataLayer.push({
-                event: "gtm_custom_event",
-                datalayer_event_name: "calendly_profile_page_viewed",
-            });
+        onProfilePageViewed: (e) => {
+            gtm_event("calendly_profile_page_viewed");
         },
-        onDateAndTimeSelected: () => {
+        onDateAndTimeSelected: (e) => {
             window.dataLayer = window.dataLayer || [];
             dataLayer.push({
                 event: "gtm_custom_event",
                 datalayer_event_name: "calendly_date_and_time_selected",
+                calendly_details: {
+                    form_id: "discovery-call-migrate-to-ga4",
+                    form_url:
+                        "https://calendly.com/shahzadaalihassan/discovery-call-migrate-to-ga4",
+                    form_name: "Discovery Call Migrate To GA4 ",
+                },
             });
         },
-        onEventTypeViewed: () => {
+        onEventTypeViewed: (e) => {
             window.dataLayer = window.dataLayer || [];
             dataLayer.push({
                 event: "gtm_custom_event",
@@ -33,7 +49,6 @@ export default function LetsTalk() {
         },
     });
     return (
-
         <InlineWidget
             url="https://calendly.com/shahzadaalihassan/discovery-call-migrate-to-ga4"
             styles={{

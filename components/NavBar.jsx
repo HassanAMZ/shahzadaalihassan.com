@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import { useSelectedLayoutSegment } from "next/navigation";
-import { CallToAction } from "@/components/Hero";
+import CallToAction from "@/components/CallToAction";
 
 export function NavLinks({ href, children }) {
     const segment = useSelectedLayoutSegment();

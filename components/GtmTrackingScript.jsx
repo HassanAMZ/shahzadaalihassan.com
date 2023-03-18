@@ -22,4 +22,5 @@ const GtmTrackingScript = ({ gtm_tracking_id }) => {
     );
 };
 
+
 export default GtmTrackingScript;

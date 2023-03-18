@@ -1,7 +1,7 @@
 "use client ";
 
 import React from "react";
-import { CallToAction } from "./Hero";
+import CallToAction from "@/components/CallToAction";
 
 const Footer = () => {
     return (

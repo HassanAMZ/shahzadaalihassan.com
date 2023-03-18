@@ -11,7 +11,7 @@ import Link from "next/link";
 export default function Home() {
   return (
     <>
-      <main className="grid place-content-center h-screen">
+      <main className="text-center p-2 grid place-content-center h-screen">
         <Link href="/google-analytics-4">
           <h2 className="text-6xl tracking-tight leading-tight font-bold pt-4 pb-2 underline text-blue-400">
             Google Analytics 4 Migration Services

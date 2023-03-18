@@ -23,7 +23,8 @@
     "paths": {
       "@/*": ["./*"],
       "@/components/*": ["components/*"],
-      "@//data/*": ["data/*"],
+      "@/data/*": ["public/data/*"],
+      "@/static/*": ["public/static/*"],
       "@/layouts/*": ["layouts/*"],
       "@/lib/*": ["lib/*"],
       "@/firebase/*": ["firebase/*"],
