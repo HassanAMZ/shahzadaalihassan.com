@@ -21,31 +21,16 @@ export default function LetsTalk() {
             gtm_event("calendly_profile_page_viewed");
         },
         onDateAndTimeSelected: (e) => {
-            window.dataLayer = window.dataLayer || [];
-            dataLayer.push({
-                event: "gtm_custom_event",
-                datalayer_event_name: "calendly_date_and_time_selected",
-                calendly_details: {
-                    form_id: "discovery-call-migrate-to-ga4",
-                    form_url:
-                        "https://calendly.com/shahzadaalihassan/discovery-call-migrate-to-ga4",
-                    form_name: "Discovery Call Migrate To GA4 ",
-                },
-            });
+            gtm_event("calendly_date_and_time_selected");
+
         },
         onEventTypeViewed: (e) => {
-            window.dataLayer = window.dataLayer || [];
-            dataLayer.push({
-                event: "gtm_custom_event",
-                datalayer_event_name: "calendly_event_type_viewed",
-            });
+            gtm_event("calendly_event_type_viewed");
+
         },
         onEventScheduled: (e) => {
-            window.dataLayer = window.dataLayer || [];
-            dataLayer.push({
-                event: "gtm_custom_event",
-                datalayer_event_name: "calendly_event_scheduled",
-            });
+            gtm_event("calendly_event_scheduled");
+
         },
     });
     return (
