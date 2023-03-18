@@ -38,7 +38,7 @@ export default function LetsTalk() {
             url="https://calendly.com/shahzadaalihassan/discovery-call-migrate-to-ga4"
             styles={{
                 height: "100vh",
-                "min-width": "90vw",
+                minWidth: "90vw",
             }}
         />
     );
