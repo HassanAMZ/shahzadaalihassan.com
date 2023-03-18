@@ -84,7 +84,7 @@ const Testimonials = () => {
         {
             name: "Alin Zdroba",
             testimonial:
-                "Rockstar in his field. Very specialized in this 'analytics' niche, true expert.. He knows what he's doing every step of the way, outstanding communication, organization, etc from the first message to completion of project. Zero constructive criticism to provide, he is exactly the type of expert you wish you'd find for any specific need. Converting a smaller fixed project into an hourly 'maintenance/improvement' contract on an as needed basis - we're that pleased!",
+                "Rockstar in his field. Very specialized in this 'analytics' niche, true expert. He knows what he's doing every step of the way, outstanding communication, organization, etc from the first message to completion of project. Zero constructive criticism to provide, he is exactly the type of expert you wish you'd find for any specific need.",
             date: "10th Feb 2023",
         },
         {
